@@ -1,7 +1,10 @@
 .form_input {
   border: 1px solid black;
-  padding: 5px;
+  padding: 10px;
   transition: all 0.5s ease;
+  box-shadow: 1px 1px 1px 1px #000000;
+  border-radius: 10px;
+
 }
 
 .form_input:hover {
@@ -13,6 +16,7 @@
   flex-direction: column;
   gap: 10px;
   margin-top: 10px;
+
 }
 
 .button {
@@ -21,10 +25,11 @@
   padding: 5px;
   transition: background-color 0.5s ease;
   width: 100px;
+  background-color: #4681f4;
+  box-shadow: 1px 1px #000000;
 }
 
 .button:hover {
-  background-color: antiquewhite;
-  box-shadow: 1px 1px #000000;
+  background-color: cyan;
 
 }

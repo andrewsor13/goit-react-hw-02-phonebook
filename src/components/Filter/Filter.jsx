@@ -4,7 +4,9 @@ import styles from './Filter.module.css';
 export default function Filter({ value, onChange }) {
   return (
     <div className={styles.filter_container}>
-      <label htmlFor="filter">Filter by Name: </label>
+      <label htmlFor="filter">
+        <em>Filter by Name: </em>
+      </label>
       <input
         className={styles.form_input}
         type="text"

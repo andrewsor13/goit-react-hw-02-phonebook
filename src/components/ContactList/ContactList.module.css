@@ -12,11 +12,13 @@
   padding: 5px;
   transition: background-color 0.5s ease;
   width: 50px;
+  background-color: #4681f4;
+  box-shadow: 1px 1px #000000;
+
 }
 
 .button:hover {
-  background-color: antiquewhite;
-  box-shadow: 1px 1px #000000;
+  background-color: cyan;
 
 }
 

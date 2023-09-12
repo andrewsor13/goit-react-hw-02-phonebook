@@ -14,7 +14,7 @@ const initialContacts = [
 const initialState = {
   contacts: initialContacts,
   filter: '',
-  divHeight: 300,
+  divHeight: 200,
 };
 
 export function App() {
@@ -40,17 +40,21 @@ export function App() {
     const updatedContacts = state.contacts.filter(
       contact => contact.id !== contactId
     );
-    setState({ ...state, contacts: updatedContacts });
+    setState({
+      ...state,
+      contacts: updatedContacts,
+      divHeight: state.divHeight - 40,
+    });
   };
 
   return (
     <div className="App">
-      <h1>Phonebook</h1>
+      <h1 className={styles.phonebook_title}>Phonebook</h1>
       <div className={styles.phonebook}>
         <ContactForm onSubmit={handleAddContact} />
       </div>
 
-      <h2>Contacts</h2>
+      <h2 className={styles.contacts_title}>Contacts</h2>
       <div
         className={styles.contacts}
         style={{ height: `${state.divHeight}px` }}
