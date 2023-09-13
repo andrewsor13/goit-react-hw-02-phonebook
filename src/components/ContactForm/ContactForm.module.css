@@ -27,6 +27,8 @@
   width: 100px;
   background-color: #4681f4;
   box-shadow: 1px 1px #000000;
+  align-self: center;
+
 }
 
 .button:hover {
